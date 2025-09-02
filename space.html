@@ -3,24 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script 
+  src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Space Exploration</title>
 </head>
-
 </style>
 <body>
-  <p>
-    Welcome to my Space Webpage
-  </p>
-
-  <div>
-    <img
-      src = https://blooloop.com/wp-content/uploads/2022/09/blue-origin-1024x768.jpeg
-      class = "h-full w-full blur-sm"
-      alt ="Blue origin image"
-    />
+  <div class="text-center p-4 bg-gray-800 text-white">
+    <h1 class="text-3xl font-bold">Welcome to Space Exploration</h1>
+    <p class="mt-2">Discover the wonders of the universe!</p>
   </div>
+  <!-- Navigation Bar -->
+  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#" class="block py-2 px-3 text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black-700 md:p-0 dark:text-black md:dark:text-white-500" aria-current="page">Mars</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Jupitar</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Saturn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Background image -->
+  <div class="relative min-h-screen w-full">
+  <!-- Background image -->
+  <img
+    src="https://blooloop.com/wp-content/uploads/2022/09/blue-origin-1024x768.jpeg"
+    class="absolute inset-0 h-full w-full object-cover blur-sm -z-10"
+    alt="Blue origin image"
+  />
+  <!-- Planet options -->
+  <div class="flex flex-col items-center justify-center min-h-screen">
+    <h2 class="text-4xl font-bold text-white mb- drop-shadow-lg">Choose a Planet</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-8">
+      
+      <!-- Mars -->
+      <a href="mars.html" class="bg-white bg-opacity-80 rounded-lg shadow-lg p-4 flex flex-col items-center hover:scale-105 transition">
+        <img src="https://images-assets.nasa.gov/image/PIA02653/PIA02653~large.jpg?w=1920&h=1920&fit=clip&crop=faces%2Cfocalpoint" alt="Mars" class="w-40 h-40 object-cover rounded-full mb-4">
+        <span class="text-xl font-semibold text-gray-800">Mars</span>
+      </a>
+
+      <!-- Jupiter -->
+      <a href="jupiter.html" class="bg-white bg-opacity-80 rounded-lg shadow-lg p-4 flex flex-col items-center hover:scale-105 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Jupiter" class="w-40 h-40 object-cover rounded-full mb-4">
+        <span class="text-xl font-semibold text-gray-800">Jupiter</span>
+      </a>
+
+      <!-- Saturn -->
+      <a href="saturn.html" class="bg-white bg-opacity-80 rounded-lg shadow-lg p-4 flex flex-col items-center hover:scale-105 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" alt="Saturn" class="w-40 h-40 object-cover rounded-full mb-4">
+        <span class="text-xl font-semibold text-gray-800">Saturn</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
 </body>
 </html>
-
-https://blooloop.com/wp-content/uploads/2022/09/blue-origin-1024x768.jpeg
