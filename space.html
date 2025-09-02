@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script 
+  src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Space Exploration</title>
 </head>
 </style>
@@ -38,14 +39,38 @@
   </nav>
 
   <!-- Background image -->
-  <div>
-    <img
-    src = https://blooloop.com/wp-content/uploads/2022/09/blue-origin-1024x768.jpeg
-    class = "h-full w-full blur-sm"
-    alt ="Blue origin image"
-    />
+  <div class="relative min-h-screen w-full">
+  <!-- Background image -->
+  <img
+    src="https://blooloop.com/wp-content/uploads/2022/09/blue-origin-1024x768.jpeg"
+    class="absolute inset-0 h-full w-full object-cover blur-sm -z-10"
+    alt="Blue origin image"
+  />
+  <!-- Planet options -->
+  <div class="flex flex-col items-center justify-center min-h-screen">
+    <h2 class="text-4xl font-bold text-white mb- drop-shadow-lg">Choose a Planet</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-8">
+      
+      <!-- Mars -->
+      <a href="mars.html" class="bg-white bg-opacity-80 rounded-lg shadow-lg p-4 flex flex-col items-center hover:scale-105 transition">
+        <img src="https://images-assets.nasa.gov/image/PIA02653/PIA02653~large.jpg?w=1920&h=1920&fit=clip&crop=faces%2Cfocalpoint" alt="Mars" class="w-40 h-40 object-cover rounded-full mb-4">
+        <span class="text-xl font-semibold text-gray-800">Mars</span>
+      </a>
+
+      <!-- Jupiter -->
+      <a href="jupiter.html" class="bg-white bg-opacity-80 rounded-lg shadow-lg p-4 flex flex-col items-center hover:scale-105 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Jupiter" class="w-40 h-40 object-cover rounded-full mb-4">
+        <span class="text-xl font-semibold text-gray-800">Jupiter</span>
+      </a>
+
+      <!-- Saturn -->
+      <a href="saturn.html" class="bg-white bg-opacity-80 rounded-lg shadow-lg p-4 flex flex-col items-center hover:scale-105 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" alt="Saturn" class="w-40 h-40 object-cover rounded-full mb-4">
+        <span class="text-xl font-semibold text-gray-800">Saturn</span>
+      </a>
+    </div>
   </div>
-  <h2>Text you want to display over the image</h2>
+</div>
 
 
 
